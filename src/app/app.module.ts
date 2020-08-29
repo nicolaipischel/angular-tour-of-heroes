@@ -11,8 +11,8 @@ import { MessagesComponent } from './messages/messages.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { HeroesModule } from './heroes/heroes.module';
+import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 
 @NgModule({
   imports: [
@@ -27,14 +27,14 @@ import { HeroesModule } from './heroes/heroes.module';
       InMemoryDataService, { dataEncapsulation: false }
     ),
     HeroesModule,
-    AppRoutingModule,
+    CrisisCenterModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
     MessagesComponent,
-    PageNotFoundComponent,
-    CrisisListComponent
-  ],
+    PageNotFoundComponent
+    ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
