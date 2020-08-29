@@ -14,6 +14,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CrisisListComponent } from './crisis-list/crisis-list.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CrisisListComponent
   ],
   bootstrap: [ AppComponent ]
 })

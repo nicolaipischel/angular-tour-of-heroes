@@ -1,3 +1,4 @@
+import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { HeroGuard } from './hero.guard';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,7 @@ const routes: Routes = [
     path: 'detail/:id',
     component: HeroDetailComponent,
     canActivate: [HeroGuard]},
+  { path: 'crisis-list', component: CrisisListComponent },
   { path: 'heroes', component: HeroesComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent  }
