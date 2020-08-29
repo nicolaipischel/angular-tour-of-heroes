@@ -27,6 +27,7 @@ export class HeroListComponent implements OnInit {
     this.heroes$ = this.route.paramMap
       .pipe(
         switchMap(params => {
+          this.selectedId = +params.get('id');
           return this.heroService.getHeroes();
         })
       );
