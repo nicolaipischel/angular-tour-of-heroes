@@ -1,3 +1,4 @@
+import { AuthModule } from './auth/auth.module';
 import { AdminModule } from './admin/admin.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -31,6 +32,7 @@ import { ComposeMessageComponent } from './compose-message/compose-message.compo
     HeroesModule,
     CrisisCenterModule,
     AdminModule,
+    AuthModule,
     AppRoutingModule
   ],
   declarations: [
