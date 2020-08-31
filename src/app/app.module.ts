@@ -16,6 +16,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HeroesModule } from './heroes/heroes.module';
 import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { ComposeMessageComponent } from './compose-message/compose-message.compo
     AppComponent,
     MessagesComponent,
     PageNotFoundComponent,
-    ComposeMessageComponent
+    ComposeMessageComponent,
+    LoginComponent
     ],
   bootstrap: [ AppComponent ]
 })
