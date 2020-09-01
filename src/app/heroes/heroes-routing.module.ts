@@ -6,10 +6,10 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 
 const heroRoutes: Routes = [
-  { path: 'heroes', component: HeroListComponent, data: { animation: 'heroes' }},
-  { path: 'hero/:id', component: HeroDetailComponent, data: { animation: 'hero' } },
-  { path: 'dashboard', component: HeroDashboardComponent}
-
+  { path: 'heroes', redirectTo: '/superheroes' },
+  { path: 'hero/:id', redirectTo: '/superhero/:id' },
+  { path: 'superheroes', component: HeroListComponent, data: { animation: 'heroes' }},
+  { path: 'superhero/:id', component: HeroDetailComponent, data: { animation: 'hero' } }
 ];
 
 @NgModule({
