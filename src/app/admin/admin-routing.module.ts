@@ -8,7 +8,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const adminRoutes: Routes = [
   {
-    path: 'admin',
+    path: '',
     component: AdminComponent,
     canActivate: [AuthGuard],
     children: [
